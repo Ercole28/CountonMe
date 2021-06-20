@@ -1,0 +1,98 @@
+/* Font */
+@font-face {
+  font-family: "Hemicube";
+  src: url('Fonts/HemicubeType_PERSONAL_USE_ONLY.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Channel";
+  src: url('Fonts/Channe.ttf') format('truetype');
+}
+
+/* Format Reset Semua HTML & CSS Default */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Style */
+body {
+  background-image: url(Image/Calcu\ BG.jpg); 
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.box {
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-text {
+  font-size: 4.6rem;
+  color: #fff;
+  font-family: "Hemicube";
+  line-height: 42px;
+}
+
+.first-text span{
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.733);
+  font-family: "Channel";
+  letter-spacing: 20px;
+}
+
+.box .box-text a {
+  text-shadow: 2px 3px 8px rgba(66, 66, 66, 0.459);
+  text-decoration: none;
+  transition: ease-in 0.3s;
+  display: inline-block;
+}
+
+.box .box-text a:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (min-width: 769px) and (max-width: 850px){
+  .first-text {
+    font-size: 3.3rem;
+    line-height: 25px;
+  }
+
+  .first-text span{
+    font-size: 1.2rem;
+    letter-spacing: 12px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 768px){
+  .first-text {
+    font-size: 2.5rem;
+    line-height: 20px;
+  }
+
+  .first-text span{
+    font-size: 0.8rem;
+    letter-spacing: 10px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 450px){
+  .first-text {
+    font-size: 1.8rem;
+    line-height: 18px;
+  }
+
+  .first-text span{
+    font-size: 0.7rem;
+    letter-spacing: 8px;
+  }
+}
